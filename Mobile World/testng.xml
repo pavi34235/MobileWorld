@@ -3,9 +3,14 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+   
       <class name="mobileworld.mobile"/>
-           <class name="mobileworld.Login"/>
-           <class name="mobileworld.Contactus"/>
+      <class name="mobileworld.Login"/>
+      <class name="mobileworld.Contactus"/>
+      <class name="mobileworld.SignUptest"/>
+      <class name="mobileworld.Signtest"/>
+      <class name="mobileworld.Contacttest"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

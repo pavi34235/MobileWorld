@@ -93,7 +93,7 @@ public class Pom  {
         	driver.get("https://mobileworld.banyanpro.com/");
         }
         
-public void registrationPage(String name,String lname,String email,String password,String date,String number,String text)
+public void registrationPage(String name,String lname,String email,String password,String date,String number,String text) throws InterruptedException
 {
 	   button.click();
 	   Signup.click();
@@ -106,6 +106,8 @@ public void registrationPage(String name,String lname,String email,String passwo
 	   numberEle.sendKeys(number);
 	   textarea.sendKeys(text);
 	   buttonbtn.click();
+	   Thread.sleep(2000);
+	   driver.quit();
 }
 
 
@@ -115,6 +117,7 @@ public void loginPage(String username,String password)
 	user.sendKeys(username);
     passwordEle.sendKeys(password);
     login.click();
+    driver.quit();
 }
 
 public void contactusPage(String name,String mail,String number,String text ) throws InterruptedException
@@ -128,12 +131,14 @@ public void contactusPage(String name,String mail,String number,String text ) th
           if(!handle.equals(parenthandle)) 
           {
               driver.switchTo().window(handle);
+              driver.manage().window().maximize();
               driver.findElement(By.cssSelector("input[placeholder='Username']")).sendKeys(name);
               driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys(mail);
               driver.findElement(By.cssSelector("input[placeholder='Phone']")).sendKeys(number);
               driver.findElement(By.cssSelector("textarea[placeholder='Message']")).sendKeys(text);
               Thread.sleep(2000);
               driver.findElement(By.cssSelector("input[type='submit']")).click();
+              driver.quit();
       
       }
       }

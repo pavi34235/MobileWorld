@@ -3,16 +3,16 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="mobileworld.Contactus">
+      <class name="mobileworld.mobile">
         <methods>
           <include name="setup"/>
         </methods>
-      </class> <!-- mobileworld.Contactus -->
-      <class name="mobileworld.Login">
+      </class> <!-- mobileworld.mobile -->
+      <class name="mobileworld.Signtest">
         <methods>
-          <include name="setup"/>
+          <include name="signin"/>
         </methods>
-      </class> <!-- mobileworld.Login -->
+      </class> <!-- mobileworld.Signtest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

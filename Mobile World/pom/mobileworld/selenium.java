@@ -30,7 +30,13 @@ public class selenium {
 	    driver.findElement(By.cssSelector("button.btn.btn-info.form-control")).click(); 
 	    System.out.println(driver.switchTo().alert().getText());
 	    driver.switchTo().alert().accept();
-
+	   //driver.findElement(By.linkText("Sign In")).click();
+	    driver.findElement(By.xpath("//form/div[6]/div[3]")).click();
+	    //driver.findElement(By.xpath("/html/body/div/div[2]/form/div[6]/div[3]/button\\")).click();
+	    System.out.println(driver.switchTo().alert().getText());
+	    driver.switchTo().alert().accept();
+	    
+	    
 	    
 	    //driver.get("https://mobileworld.azurewebsites.net/sign.html");
 	    driver.findElement(By.id("username")).sendKeys("pavithra");

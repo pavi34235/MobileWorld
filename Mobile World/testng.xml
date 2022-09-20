@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
    
-      <class name="mobileworld.mobile"/>
+      <class name="mobileworld.signup"/>
       <class name="mobileworld.Login"/>
       <class name="mobileworld.Contactus"/>
       <class name="mobileworld.SignUptest"/>

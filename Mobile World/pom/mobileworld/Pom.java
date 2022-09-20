@@ -52,7 +52,8 @@ public class Pom  {
         
         @FindBy(css=" button.btn.btn-info.form-control")
         WebElement buttonbtn;
-
+        
+        //driver.findElement(By.xpath("//form/div[6]/div[3]")).click();(sign in )
         
         @FindBy(id="username")
         WebElement user;
@@ -111,14 +112,16 @@ public void registrationPage(String name,String lname,String email,String passwo
 }
 
 
-public void loginPage(String username,String password)   
+public void loginPage(String username,String password) throws InterruptedException   
 {
 	button.click();
 	user.sendKeys(username);
     passwordEle.sendKeys(password);
+    Thread.sleep(2000);
     login.click();
     driver.quit();
 }
+
 
 public void contactusPage(String name,String mail,String number,String text ) throws InterruptedException
 {

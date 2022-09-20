@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,7 +109,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="mobileworld.mobile" class="method navigator-link" hash-for-method="setup">setup</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="mobileworld.signup" class="method navigator-link" hash-for-method="setup(pavithra, shan, abc@gmail.com, abc123, 3/12/2000, 0123456789, Hi everyone)">setup(pavithra, shan, abc@gmail.com, abc123, 3/12/2000, 0123456789, Hi everyone)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="mobileworld.signup" class="method navigator-link" hash-for-method="setup(abcdefghijklmnopqrstuvwx, sh, abc@gmail.com, abc123234567, 3/12/20000,   , hi)">setup(abcdefghijklmnopqrstuvwx, sh, abc@gmail.com, abc123234567, 3/12/20000,   , hi)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="mobileworld.signup" class="method navigator-link" hash-for-method="setup(pa, sh, abc@gma.com, abc123234567, 3/12/20000, 01289, hi )">setup(pa, sh, abc@gma.com, abc123234567, 3/12/20000, 01289, hi )</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -192,14 +202,31 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">mobileworld.mobile</span>
+              <span class="class-name">mobileworld.signup</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="setup">
-                  </a> <!-- setup -->
+                  <a name="setup(pavithra, shan, abc@gmail.com, abc123, 3/12/2000, 0123456789, Hi everyone)">
+                  </a> <!-- setup(pavithra, shan, abc@gmail.com, abc123, 3/12/2000, 0123456789, Hi everyone) -->
                   <span class="method-name">setup</span>
+                  <span class="parameters">(pavithra, shan, abc@gmail.com, abc123, 3/12/2000, 0123456789, Hi everyone)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setup(abcdefghijklmnopqrstuvwx, sh, abc@gmail.com, abc123234567, 3/12/20000,   , hi)">
+                  </a> <!-- setup(abcdefghijklmnopqrstuvwx, sh, abc@gmail.com, abc123234567, 3/12/20000,   , hi) -->
+                  <span class="method-name">setup</span>
+                  <span class="parameters">(abcdefghijklmnopqrstuvwx, sh, abc@gmail.com, abc123234567, 3/12/20000,   , hi)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setup(pa, sh, abc@gma.com, abc123234567, 3/12/20000, 01289, hi )">
+                  </a> <!-- setup(pa, sh, abc@gma.com, abc123234567, 3/12/20000, 01289, hi ) -->
+                  <span class="method-name">setup</span>
+                  <span class="parameters">(pa, sh, abc@gma.com, abc123234567, 3/12/20000, 01289, hi )</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -246,7 +273,7 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;mobileworld.mobile&quot;/&gt;
+      &lt;class name=&quot;mobileworld.signup&quot;/&gt;
       &lt;class name=&quot;mobileworld.Login&quot;/&gt;
       &lt;class name=&quot;mobileworld.Contactus&quot;/&gt;
       &lt;class name=&quot;mobileworld.SignUptest&quot;/&gt;
@@ -291,36 +318,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'setup')
-data.setCell(0, 2, 'mobileworld.mobile')
-data.setCell(0, 3, 15920);
+data.setCell(0, 2, 'mobileworld.Contactus')
+data.setCell(0, 3, 13164);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'setup')
-data.setCell(1, 2, 'mobileworld.Contactus')
-data.setCell(1, 3, 13535);
+data.setCell(1, 2, 'mobileworld.Login')
+data.setCell(1, 3, 12557);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'setup')
-data.setCell(2, 2, 'mobileworld.Login')
-data.setCell(2, 3, 8924);
+data.setCell(2, 2, 'mobileworld.signup')
+data.setCell(2, 3, 6891);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'contactus')
-data.setCell(3, 2, 'mobileworld.Contacttest')
-data.setCell(3, 3, 5138);
+data.setCell(3, 1, 'setup')
+data.setCell(3, 2, 'mobileworld.signup')
+data.setCell(3, 3, 5847);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'signin')
-data.setCell(4, 2, 'mobileworld.Signtest')
-data.setCell(4, 3, 3708);
+data.setCell(4, 1, 'setup')
+data.setCell(4, 2, 'mobileworld.signup')
+data.setCell(4, 3, 5472);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'signUp')
-data.setCell(5, 2, 'mobileworld.SignUptest')
-data.setCell(5, 3, 3658);
+data.setCell(5, 1, 'contactus')
+data.setCell(5, 2, 'mobileworld.Contacttest')
+data.setCell(5, 3, 3756);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'signin')
+data.setCell(6, 2, 'mobileworld.Signtest')
+data.setCell(6, 3, 3626);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'signUp')
+data.setCell(7, 2, 'mobileworld.SignUptest')
+data.setCell(7, 3, 3226);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 50 seconds</span>
+              <span class="suite-total-time">Total running time: 54 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -346,45 +381,53 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">mobileworld.mobile</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">mobileworld.signup</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">setup</span>
+                <span class="method-name">setup(pavithra, shan, abc@gmail.com, abc123, 3/12/2000, 0123456789, Hi everyone)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setup(pa, sh, abc@gma.com, abc123234567, 3/12/20000, 01289, hi )</span>
+                <span class="method-start">6898 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setup(abcdefghijklmnopqrstuvwx, sh, abc@gmail.com, abc123234567, 3/12/20000,   , hi)</span>
+                <span class="method-start">12372 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">mobileworld.Login</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">setup</span>
-                <span class="method-start">15929 ms</span>
+                <span class="method-start">18230 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">mobileworld.Contactus</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">setup</span>
-                <span class="method-start">24857 ms</span>
+                <span class="method-start">30791 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">mobileworld.SignUptest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">signUp</span>
-                <span class="method-start">38393 ms</span>
+                <span class="method-start">43956 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">mobileworld.Signtest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">signin</span>
-                <span class="method-start">42053 ms</span>
+                <span class="method-start">47186 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">mobileworld.Contacttest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">contactus</span>
-                <span class="method-start">45763 ms</span>
+                <span class="method-start">50816 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
